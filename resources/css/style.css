@@ -1,0 +1,171 @@
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+/* container */
+.container {
+	max-width: 1024px;
+}
+
+/* header styles */
+.header {
+	width: 100%;
+}
+
+	/* corporate styles */
+	.corp-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1rem 1.5rem;
+		height: 2rem;
+		border-bottom: black solid 2px;
+	}
+
+	.corporate {
+		display: flex;
+		align-items: center;
+		height: 1.5rem;
+	}
+
+	/* nav styles */
+	nav {
+		display: flex;
+		align-items: center;
+	}
+
+	nav span {
+		margin-right: 1rem;
+	}
+
+
+	/* banner styles */
+	.container .banner {
+		padding: 2rem 1.5rem;
+		display: flex;
+		flex-direction: row;
+		background-color: lightgray;
+		border-bottom: black solid 2px;
+	}
+
+	div.banner-img {
+		width: 60%;
+	}
+
+	img.banner-img {
+		width: 100%;
+	}
+
+	div.banner-text {
+		margin-left: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 40%;
+	}
+
+	div.banner-text h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+		line-height: 1.2;
+		margin: 0 0 1.5rem;
+	}
+
+	div.banner-text h2 {
+		font-size: 1.5rem;
+		font-weight: lighter;
+		line-height: 1.2;
+		margin: 0 0 1.5rem;
+	}
+/* information style */
+div.container.information {
+		padding: 2rem 1.5rem;
+		display: flex;
+		flex-direction: row;
+		background-color: white;
+		border-bottom: black solid 2px;
+	}
+
+	/* main information styles */
+	div.main-information {
+		width: 60%;
+	}
+
+	div.main-info-pic-box {
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+
+	img.main-info-pic {
+		width: 100%;
+	}
+
+	/* fonts */
+	.main-information h1 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin: 0 0 1.5rem 0;
+	}
+
+	.main-information p {
+		line-height: 1.4;
+		font-weight: lighter;
+		font-size: 0.75rem;
+	}
+
+	.main-information span {
+		font-size: 0.5rem;
+	}
+	/* end fonts */
+
+	/* secondary information */
+	div.seconday-information {
+		margin-left: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 40%;
+	}
+
+	div.info-box {
+		border: black solid 1px;
+		padding: 0.5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	div.info-pic-box {
+		width: 35%;
+		float: left;
+		margin-right: 0.5rem;
+	}
+
+	img.info-pic {
+		width: 100%;
+	}
+
+	div.info-text {
+		float: right;
+		width: 65%;
+		line-height: 1.2;
+	}
+
+	/* fonts for info text */
+	div.info-text h2 {
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	div.info-text p {
+		font-size: 0.75rem;
+	}
+
+	div.info-text a {
+		font-size: 0.75rem;
+		color: lighblue;
+	}
+	/* end fonts */
+
+/* courses */
