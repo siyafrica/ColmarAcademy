@@ -292,3 +292,10 @@ div.container.thesis {
 		font-size: 0.75rem;
 		color: lighblue;
 	}
+
+/* footer */
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 1.5rem 2rem 1.5rem;
+}
