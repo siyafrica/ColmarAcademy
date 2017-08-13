@@ -39,9 +39,16 @@ html {
 		margin-right: 1rem;
 	}
 
+	@media only screen and (min-width: 481px) and (max-width: 1600px)  {
+		/* the mobile nav disappears in the desktop view*/
+		nav.mobile-nav {
+			display: none;
+		}
+	}
+
 
 	/* banner styles */
-	.container .banner {
+	div.banner {
 		padding: 2rem 1.5rem;
 		display: flex;
 		flex-direction: row;
@@ -79,8 +86,52 @@ html {
 		line-height: 1.2;
 		margin: 0 0 1.5rem;
 	}
+
+@media only screen and (max-width: 480px) {
+		/* the corporate nav container containing the logo and mobile nav*/
+		.corp-nav {
+			height: 4rem;
+			display: flex;
+			align-items: center;
+		}
+
+		nav.mobile-nav  {
+			width: 60%;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		/* the dekstop nav needs to disappear*/
+		nav.desktop-nav, .colmar-black, .colmar-gray {
+			display: none;
+		}
+
+		/* the mobile banner styles*/
+		.container .mobile-banner {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: lightgrey;
+			border-bottom: black solid 2px;
+		}
+
+		div.mobile-banner-img, img.banner-img {
+			width: 100%
+		}
+
+		div.mobile-banner-text {
+			padding: 2rem 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+
 /* information style */
-div.container.information {
+div.information {
 		padding: 2rem 1.5rem;
 		display: flex;
 		flex-direction: row;
@@ -130,7 +181,6 @@ div.container.information {
 	}
 
 	div.info-box {
-		border: black solid 1px;
 		padding: 0.5rem;
 		display: flex;
 		align-items: center;
@@ -168,8 +218,90 @@ div.container.information {
 	}
 	/* end fonts */
 
+	div.banner-text button {
+    	background-color: gray; /* Green */
+    	border: none;
+    	color: white;
+    	padding: 1rem 2rem;
+    	width: 80%;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 1rem;
+	}
+
+	@media only screen and (min-width: 481px) and (max-width: 1600px) {
+		img.mobile-info-pic {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		/* the main information section disappears in the mobile view */
+		.main-information {
+			display: none;
+		}
+
+		div.information {
+			padding: 1rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		/* the secondary information section appears with mobile images */
+		div.seconday-information {
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		div.info-box {
+			margin: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+
+		/* the desktop image disappears */
+		img.info-pic {
+			display: none;
+		}
+
+		/* the mobile info pic */
+		img.mobile-info-pic {
+			width: 100%;
+		}
+
+		div.info-text {
+			float: left;
+			padding: 1rem;
+			width: 100%;
+			line-height: 1.4;
+		}
+
+		/* fonts for info text */
+		div.info-text h2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		div.info-text p {
+			font-size: 1.25rem;
+		}
+
+		div.info-text a {
+			font-size: 1rem;
+			color: lighblue;
+		}
+	}
+
 /* courses */
-div.container.courses {
+div.courses {
 		padding: 2rem 1.5rem;
 		display: flex;
 		flex-direction: column;
@@ -220,8 +352,44 @@ div.container.courses {
 	}
 	/* end of fonts for courses */
 
+	@media only screen and (max-width: 480px) {
+		div.courses-container {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		div.course-box {
+			width: 100%;
+			border: none;
+			background-color: lightgrey;
+			margin-bottom: 0.5rem;
+		}
+
+		div.course-pic-box {
+			display: none;
+		}
+
+		div.course-pic img {
+			display: none;
+		}
+
+		div.course-text p {
+			display: none;
+		}
+
+		/* fonts for courses */
+		.title {
+			text-align: center;
+			margin: 2rem 0 1rem 0;
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+	}
+
 /* thesis section */
-div.container.thesis {
+div.thesis {
 		padding: 2rem 1.5rem;
 		display: flex;
 		flex-direction: column;
@@ -291,6 +459,31 @@ div.container.thesis {
 	div.thesis-text a {
 		font-size: 0.75rem;
 		color: lighblue;
+	}
+
+	@media only screen and (max-width: 480px) {
+		div.thesis {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			background-color: lightgray;
+			border-bottom: black solid 2px;
+		}
+
+		.title {
+			text-align: center;
+			margin: 2rem 0 1rem 0;
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+
+		div.video-box {
+			width: 100%
+		}
+
+		div.other-work, div.video-box h3, div.video-box p {
+			display: none;
+		}
 	}
 
 /* footer */
